@@ -175,6 +175,7 @@ p {
     height: 300px;
     border-radius: 50%;
     border: 2px solid wheat;
+    -webkit-filter: drop-shadow(0px 0px 5px white);
     filter: drop-shadow(0px 0px 5px white);
 }
 
@@ -216,6 +217,7 @@ p {
     border-radius: 10px;
     width: 100%;
     height: auto;
+    -webkit-filter: saturate(1.5);
     filter: saturate(1.5);
 }
 
@@ -295,6 +297,7 @@ a.button1:hover {
     border-radius: 10px;
     height: 100%;
     width: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
 }
 
