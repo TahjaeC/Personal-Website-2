@@ -1,4 +1,56 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width:360px) {
+    .header {
+        display: none;
+    }
+
+    .profile-pic {
+        margin-top: -20px;
+    }
+
+    h1 {
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .info-prof {
+        margin-top: 20px;
+    }
+
+    .gallery {
+        width: 90%;
+        grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+    }
+
+    .card {
+        max-width: 300px;
+        margin: 3%;
+    }
+
+    .future {
+        max-width: 300px;
+        margin: 3%;
+    }
+
+    .footer {
+        background-color: none;
+        padding-top: 0;
+    }
+
+    .fancy span:before {
+        display: none;
+    }
+
+    .fancy span:after {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
     .header {
         display: none;
     }
@@ -99,55 +151,3 @@
         width: 0.5;
     }
 } */
-
-@media only screen and (max-width:360px) {
-    .header {
-        display: none;
-    }
-
-    .profile-pic {
-        margin-top: -20px;
-    }
-
-    h1 {
-        font-size: 25px;
-        letter-spacing: 1px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    .info-prof {
-        margin-top: 20px;
-    }
-
-    .gallery {
-        width: 90%;
-        grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
-    }
-
-    .card {
-        max-width: 300px;
-        margin: 3%;
-    }
-
-    .future {
-        max-width: 300px;
-        margin: 3%;
-    }
-
-    .footer {
-        background-color: none;
-        padding-top: 0;
-    }
-
-    .fancy span:before {
-        display: none;
-    }
-
-    .fancy span:after {
-        display: none;
-    }
-
-}
