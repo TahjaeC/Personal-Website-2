@@ -1,0 +1,410 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    background-color: white;
+    color: black;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    height: 100%;
+    line-height: 1.6;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/background6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
+
+/**************************************************************************************************/
+/*******************************************FONT STYLING*******************************************/
+/**************************************************************************************************/
+h1,
+h2,
+h3 {
+    color: wheat;
+    font-weight: 200;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 50px;
+    letter-spacing: 3px;
+    position: relative;
+}
+
+
+h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 3px;
+    padding: 70px 0;
+}
+
+h3 {
+
+    letter-spacing: 2px;
+}
+
+p {
+    font-weight: 200;
+    font-size: 95%;
+    color: white;
+    text-align: justify;
+    padding: 25px;
+}
+
+/**************************************************************************************************/
+/********************************************H2 LINES**********************************************/
+/**************************************************************************************************/
+.fancy {
+    line-height: 0.5;
+    text-align: center;
+}
+
+.fancy span {
+    display: inline-block;
+    position: relative;
+}
+
+.fancy span:before,
+.fancy span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid wheat;
+    border-top: 1px solid wheat;
+    top: 0;
+    width: 200px;
+}
+
+.fancy span:before {
+    right: 100%;
+    margin-right: 15px;
+}
+
+.fancy span:after {
+    left: 100%;
+    margin-left: 15px;
+}
+
+/**************************************************************************************************/
+/******************************************NAVIGATION**********************************************/
+/**************************************************************************************************/
+.logo {
+    height: 50px;
+    cursor: pointer;
+}
+
+.header {
+    padding: 25px 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+
+.nav a {
+    color: wheat;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav a:hover {
+    color: #521C5E;
+    cursor: pointer;
+    padding: 3px 7px;
+    background-color: wheat;
+    border-radius: 3px;
+    transition: 0.2s ease-in-out;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+}
+
+.nav li {
+    margin-left: 50px;
+}
+
+/**************************************************************************************************/
+/********************************************SECTION***********************************************/
+/**************************************************************************************************/
+#home,
+#expertise,
+#interests,
+#aspiration {
+
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/**************************************************************************************************/
+/***********************************************HOME***********************************************/
+/**************************************************************************************************/
+#home {
+    /* background-color: grey; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic {
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid wheat;
+    filter: drop-shadow(0px 0px 5px white);
+}
+
+.home-info {
+    max-width: 80%;
+    text-align: center;
+}
+
+.info-prof {
+    margin-top: 50px;
+}
+
+
+/**************************************************************************************************/
+/*********************************************EXPERTISE********************************************/
+/**************************************************************************************************/
+#expertise {
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    background-color: #098C9A;
+    margin: 1%;
+}
+
+.card img {
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    filter: saturate(1.5);
+}
+
+.card-content {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-content h3 {
+    display: block;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+
+.card-content ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.card-content li {
+    padding: 8px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+/**************************************************************************************************/
+/*****************************************EXPERTISE BUTTONS****************************************/
+/**************************************************************************************************/
+.btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+a.button1 {
+    margin: 10px;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid wheat;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 5px;
+    color: wheat;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+a.button1:hover {
+    color: black;
+    background-color: wheat;
+}
+
+/**************************************************************************************************/
+/*********************************************INTERESTS********************************************/
+/**************************************************************************************************/
+#interests {
+    /* background-color: #C47335; */
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery {
+    width: 0.1;
+    margin: auto;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(426px, 1fr));
+    gap: 5px;
+}
+
+.gallery img {
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/**************************************************************************************************/
+/*********************************************GALLERY TEXT*****************************************/
+/**************************************************************************************************/
+.image-item#caption {
+    position: relative;
+}
+
+.image-item#caption .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+
+.image-item#caption .text h1 {
+    margin: 0;
+    color: wheat;
+}
+
+.image-item#caption:hover .text {
+    opacity: 1;
+
+}
+
+.image-item#caption:hover img {
+    filter: opacity(30%);
+    -webkit-filter: opacity(30%);
+    transition: 0.5s ease-in-out;
+}
+
+/**************************************************************************************************/
+/***********************************************FUTURE*********************************************/
+/**************************************************************************************************/
+#aspiration {
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.future-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.future {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    background-color: #098C9A;
+    margin: 1%;
+}
+
+.future img {
+    padding: 5px;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.future-content {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.future-content h3 {
+    display: block;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+
+/**************************************************************************************************/
+/***********************************************FOOTER********************************************/
+/**************************************************************************************************/
+.footer {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.contact {
+    width: 20%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 16px;
+    padding: 5px 0;
+    color: wheat;
+}
+
+.facebook {
+    color: #4267B2;
+}
+
+.whatsapp {
+    color: #25D366;
+}
+
+.mail {
+    color: #C71610
+}

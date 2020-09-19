@@ -1,0 +1,101 @@
+@media only screen and (max-width: 768px) {
+    .header {
+        display: none;
+    }
+
+    .profile-pic {
+        height: 250px;
+    }
+
+    h1 {
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+
+    .home-info {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 90%;
+        margin-top: 10px;
+    }
+
+    .gallery {
+        width: 90%;
+        grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+    }
+
+    .gallery img {
+        height: auto;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .card {
+        max-width: 350px;
+        margin: 3%;
+    }
+
+    .future {
+        max-width: 350px;
+        margin: 3%;
+    }
+
+    .contact {
+        width: 100%;
+    }
+
+    .footer {
+        background-color: transparent;
+        padding-top: 0;
+    }
+
+    .footer p {
+        text-align: center;
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (max-width:1024px) {
+    .header {
+        background-color: none;
+        padding: 0 45px;
+        position: unset;
+    }
+
+
+    .logo {
+        height: 55px;
+        padding: 20px 0;
+    }
+
+    #home {
+        margin-bottom: -10vh;
+
+    }
+
+    h1 {
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+
+    .card {
+        max-width: 400px;
+        margin: 3%;
+    }
+
+    .contact {
+        width: 30%;
+    }
+
+    .gallery {
+        width: 0.5;
+    }
+}
