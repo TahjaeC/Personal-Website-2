@@ -1,20 +1,15 @@
-@media only screen and (max-width:280px) {
-    .header {
-        display: none;
-    }
-}
-
 @media only screen and (max-width:360px) {
     .header {
         display: none;
     }
 
     .profile-pic {
-        margin-top: -20px;
+        height: 200px;
+        margin-top: -10px;
     }
 
     h1 {
-        font-size: 25px;
+        font-size: 20px;
         letter-spacing: 1px;
     }
 
@@ -22,8 +17,16 @@
         font-size: 20px;
     }
 
+    h3 {
+        font-size: 80%;
+    }
+
     .info-prof {
         margin-top: 20px;
+    }
+
+    .prof {
+        margin-top: 15px;
     }
 
     .gallery {
@@ -32,12 +35,12 @@
     }
 
     .card {
-        max-width: 300px;
+        max-width: 280px;
         margin: 3%;
     }
 
     .future {
-        max-width: 300px;
+        max-width: 280px;
         margin: 3%;
     }
 
@@ -56,10 +59,91 @@
 
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 480px) {
     .header {
         display: none;
     }
+
+    h1 {
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 90%;
+    }
+
+    .prof {
+        margin-top: 20px;
+    }
+
+    .fancy span:before {
+        display: none;
+    }
+
+    .fancy span:after {
+        display: none;
+    }
+
+    .gallery {
+        width: 90%;
+        grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+    }
+
+    .card {
+        max-width: 350px;
+        margin: 3%;
+    }
+
+    .future {
+        max-width: 350px;
+        margin: 3%;
+    }
+
+    .footer {
+        background-color: none;
+        padding-top: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        display: none;
+    }
+
+    h1 {
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 90%;
+    }
+
+    .gallery {
+        width: 90%;
+        grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+    }
+
+    .fancy span:before,
+    .fancy span:after {
+        width: 120px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    /* .header {
+        display: none;
+    } */
 
     .profile-pic {
         height: 250px;
@@ -119,41 +203,4 @@
         font-size: 12px;
     }
 
-}
-
-@media only screen and (max-width:1024px) {
-    .header {
-        background-color: none;
-        padding: 0 45px;
-        position: unset;
-    }
-
-
-    .logo {
-        height: 55px;
-        padding: 20px 0;
-    }
-
-    #home {
-        margin-bottom: -10vh;
-
-    }
-
-    h1 {
-        font-size: 25px;
-        letter-spacing: 1px;
-    }
-
-    .card {
-        max-width: 400px;
-        margin: 3%;
-    }
-
-    .contact {
-        width: 30%;
-    }
-
-    .gallery {
-        width: 0.5;
-    }
 }
