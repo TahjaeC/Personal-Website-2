@@ -8,6 +8,10 @@
         margin-top: -10px;
     }
 
+    .home-info {
+        max-width: 100%;
+    }
+
     h1 {
         font-size: 20px;
         letter-spacing: 1px;
