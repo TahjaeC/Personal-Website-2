@@ -140,10 +140,7 @@
 
 }
 
-@media only screen and (min-width: 768px) {
-    /* .header {
-        display: none;
-    } */
+/* @media only screen and (min-width: 768px) {
 
     .profile-pic {
         height: 250px;
@@ -203,4 +200,4 @@
         font-size: 12px;
     }
 
-}
+} */
