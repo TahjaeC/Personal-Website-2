@@ -285,7 +285,7 @@ a.button1:hover {
 }
 
 .gallery {
-    width: 0.1;
+    width: 95%;
     margin: auto;
     align-content: center;
     display: grid;
