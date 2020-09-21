@@ -71,7 +71,7 @@ p {
     font-size: 95%;
     color: white;
     text-align: justify;
-    padding: 25px;
+    padding: 10px 25px;
 }
 
 /**************************************************************************************************/
@@ -360,6 +360,7 @@ a.button1:hover {
 
 .future img {
     padding: 5px;
+    margin-bottom: 5px;
     border-radius: 10px;
     width: 100%;
     height: auto;
