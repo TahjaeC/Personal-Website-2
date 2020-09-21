@@ -331,7 +331,7 @@ a.button1:hover {
 .image-item#caption:hover img {
     filter: opacity(30%);
     -webkit-filter: opacity(30%);
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 /**************************************************************************************************/
